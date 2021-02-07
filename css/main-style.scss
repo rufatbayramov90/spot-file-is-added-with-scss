@@ -1,0 +1,196 @@
+$color11:#2D2D2D;
+$color12: #FF7878;
+$color13:white;
+$color14:rgb(85, 84, 84);
+$opacity:.5;
+$weight:800;
+$size:25px;
+$padding:50px 0;
+$padding80:80px 0;
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 7;
+    .navbar{
+        background-color:$color11;
+        .navbar-brand{
+            font-size:$size;
+            font-weight:$weight;
+            padding-left: 150px;
+            color:rgb(185, 185, 185) !important;
+            div {
+                background-color:$color12;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                display: inline-block;
+                border: none;
+            }
+        }
+        .navbar-toggler{
+            outline: none !important;
+        }
+        .fa-bars{
+            color: $color13;
+        }
+    }
+}
+.navbar-nav{
+    margin-right:100px;
+    .active{
+        background-color:$color12;
+        &:hover{
+            background-color: black;
+        }
+     }
+        a{
+        color:$color13 !important;
+    }
+    li{
+        padding: 5px 10px;
+        margin: 5px 0;
+        a{
+            font-weight: 600;
+            color:rgb(185, 185, 185) !important ;
+        }
+    }
+}
+.navbar-nav li:hover a{
+    color: $color13 !important;
+    transition: .3s ease-in-out;
+}
+/* -------banner ------*/
+#banner{
+    background-image:  url('../img/sitting-room.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70%;
+    position: relative;
+    z-index:1;
+}
+#banner::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 131, 240, 0.575);
+    z-index:-1;
+    opacity: .8;
+}
+.banner-title{
+    font-size: 80px;
+    font-weight: 100;
+    color: $color13;
+    span{
+      font-weight: $weight;  
+    }
+}
+.banner-prg{
+    font-size:40px;
+    font-weight:700 ;
+    color: white;
+}
+.col-lg-8{
+    margin: 80px auto;
+}
+/*------services-----*/
+#services{
+    padding: $padding80;
+    .services{
+        h5{
+            margin: 15px;
+        }
+        p{
+           opacity: $opacity; 
+           text-align: justify;
+        }
+    }
+    .fas{
+        font-size: $size;
+        color: $color12;
+    }
+
+}
+/*-------latest works-------*/
+#latest-works{
+    margin: 40px 0;
+    img{
+        width: 300px;
+        height: 350px;
+        &:hover{
+            transform: rotate(-12deg);
+            transition: .5s ease-in-out;
+        }
+    }
+}
+/*--------About us ---------*/
+#about-us{
+    border-radius: 10px;
+    width: 100%;
+    p{
+        opacity: $opacity;
+        margin-bottom: 50px;
+    }
+}
+/*--------our clients---------*/
+#Our-clients{
+    background-color: #EBEBEB;
+    padding: $padding;
+    .Our-clients img{
+        margin:20px;
+    }
+}
+/*--------about design---------*/
+#about-design{
+    padding-top: 5px;
+    background-color: $color12;
+    .about-design{
+        color: $color13;
+        p{
+            font-size: 15px;
+            font-weight: 200;
+        }
+    }
+}
+/*--------social-media---------*/
+#social-media{
+    padding:30px 0;
+    background-color: $color11;
+    .fab{
+        font-size: 30px;
+        color: $color13;
+        margin: 0 20px;
+        &:hover{
+            color:$color12 ;
+        }
+    }
+}
+/*--------copyright---------*/
+#copyright{
+    background-color: #222222;
+    color: $color13;
+    padding: 30px 0;
+    a{
+        color:  rgb(218, 118, 26);
+        &:hover{
+            color: rgb(85, 84, 84);
+            text-decoration: none;
+            transition: .3s ease-in-out;
+        }
+    }
+    .copyright-template{
+        color: rgb(85, 84, 84);
+    }
+
+}
+
+
